@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+  </head>
+
+  <body>
+    <nav class="nav-top">
+      <div class="nav-top__title">
+        <img src="./images/title-name.png">
+      </div>
+      <div class="wrapper__nav">
+        <nav class="nav-top__navigation">
+          <ul class="nav-top__list">
+              <li>吉備津神社とは</li>
+              <li>境内図</li>
+              <li>年中行事</li>
+              <li>ご祈祷案内</li>
+              <li>授与品</li>
+              <li>よくあるご質問</li>
+              <li>採用情報</li>
+              <li>アクセス</li>
+              <li>お問い合わせ</li>
+          </ul>
+          <ul class="nav-top__language">
+              <li>E N</li>
+              <div></div>
+              <li>K R</li>
+          </ul>   
+        </nav>
+      </div>
+
+    </nav>
+          <ul class="vertical__navigation">
+            <li><a href="/">吉備津神社とは</a></li>
+            <li><a href="/">境内図</a></li>
+            <li><a href="/">年中行事</a></li>
+            <li><a href="/">ご祈祷案内</a></li>
+            <li><a href="/">授与品</a></li>
+            <li><a href="/">採用情報</a></li>
+            <li><a href="/">よくあるご質問</a></li>
+            <li><a href="/">アクセス</a></li>
+            <li><a href="/">お問い合わせ</a></li>
+          </ul>
+    <div class="heightDiv"></div>
+
+    <script>
+      $(window).scroll(function () {
+        const scrollHeight = $(window).scrollTop();
+        console.log(scrollHeight);
+        if (scrollHeight > 230) {
+          $(".nav-top__title, .nav-top__list").css({ opacity: "1" });
+        } else {
+          $(".nav-top__title, .nav-top__list").css({ opacity: "0" });
+        }
+      });
+    </script>
+  </body>
+</html>
